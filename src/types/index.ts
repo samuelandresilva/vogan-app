@@ -1,0 +1,8 @@
+export type { AgendaProfissional } from './AgendaProfissional'
+export type { DadosEmpresa } from './DadosEmpresa'
+export type { ProfissionalServico } from './ProfissionalServico'
+export type { EventoOcupado } from './EventoOcupado'
+export type { HorarioDisponivel } from './HorarioDisponivel'
+export type { Profissional } from './Profissional'
+export type { Servico } from './Servico'
+export type { SolicitacaoAgendamento } from './SolicitacaoAgendamento'

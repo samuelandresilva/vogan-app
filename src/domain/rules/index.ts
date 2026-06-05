@@ -1,0 +1,1 @@
+export { generateAvailableSlots } from './generateAvailableSlots'

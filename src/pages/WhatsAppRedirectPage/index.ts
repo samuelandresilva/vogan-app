@@ -1,0 +1,1 @@
+export { WhatsAppRedirectPage } from './WhatsAppRedirectPage'
