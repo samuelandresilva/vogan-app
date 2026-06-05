@@ -2,7 +2,7 @@ import { useEffect, useRef, type PropsWithChildren } from 'react'
 import { useLocation } from 'react-router-dom'
 import type { DadosEmpresa } from '../../types'
 import { DadosEmpresaCard } from './DadosEmpresaCard'
-import { HeaderOakbeard } from './HeaderOakbeard'
+import { AppHeader } from './AppHeader'
 import { type BookingStep, StepIndicator } from './StepIndicator'
 
 interface AppLayoutProps extends PropsWithChildren {
@@ -31,7 +31,7 @@ export function AppLayout({
 
   return (
     <div className="min-h-dvh bg-transparent text-[#3f3437]">
-      <HeaderOakbeard />
+      <AppHeader />
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-5 px-4 py-5 sm:px-5 sm:py-7">
         <DadosEmpresaCard dadosEmpresa={dadosEmpresa} />
         {currentStep ? <StepIndicator currentStep={currentStep} /> : null}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { AppLayout, HeaderOakbeard } from '../../components/layout'
+import { AppLayout, AppHeader } from '../../components/layout'
 import { useBooking } from '../../contexts'
 import { getDadosEmpresa } from '../../services/googleSheetsService'
 import {
@@ -79,7 +79,7 @@ export function ReviewPage() {
   ) {
     return (
       <div className="min-h-dvh bg-transparent text-[#3f3437]">
-        <HeaderOakbeard />
+        <AppHeader />
         <main className="mx-auto w-full max-w-5xl px-5 py-8">
           <div className="rounded-md border border-[#f3d4dc] bg-white p-4">
             <p className="text-sm text-[#7b666d]">
@@ -101,7 +101,7 @@ export function ReviewPage() {
   if (isLoading) {
     return (
       <div className="min-h-dvh bg-transparent text-[#3f3437]">
-        <HeaderOakbeard />
+        <AppHeader />
         <main className="mx-auto w-full max-w-5xl px-5 py-8">
           <p className="rounded-md border border-[#f3d4dc] bg-white p-4 text-sm text-[#7b666d]">
             Carregando informações...
@@ -114,7 +114,7 @@ export function ReviewPage() {
   if (errorMessage || !empresa) {
     return (
       <div className="min-h-dvh bg-transparent text-[#3f3437]">
-        <HeaderOakbeard />
+        <AppHeader />
         <main className="mx-auto w-full max-w-5xl px-5 py-8">
           <p className="rounded-md border border-[#f0c8cf] bg-[#fff5f6] p-4 text-sm text-[#9f5d68]">
             {errorMessage ||

@@ -1,5 +1,5 @@
 export { AppLayout } from './AppLayout'
 export { DadosEmpresaCard } from './DadosEmpresaCard'
-export { HeaderOakbeard } from './HeaderOakbeard'
+export { AppHeader } from './AppHeader'
 export { StepIndicator } from './StepIndicator'
 export type { BookingStep } from './StepIndicator'

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { AppLayout, HeaderOakbeard } from '../../components/layout'
+import { AppLayout, AppHeader } from '../../components/layout'
 import { ServiceCard } from '../../components/service'
 import { useBooking } from '../../contexts'
 import {
@@ -78,7 +78,7 @@ export function ServicePage() {
   if (isLoading) {
     return (
       <div className="min-h-dvh bg-transparent text-[#3f3437]">
-        <HeaderOakbeard />
+        <AppHeader />
         <main className="mx-auto w-full max-w-5xl px-5 py-8">
           <p className="rounded-md border border-[#f3d4dc] bg-white p-4 text-sm text-[#7b666d]">
             Carregando informações...
@@ -91,7 +91,7 @@ export function ServicePage() {
   if (errorMessage || !empresa) {
     return (
       <div className="min-h-dvh bg-transparent text-[#3f3437]">
-        <HeaderOakbeard />
+        <AppHeader />
         <main className="mx-auto w-full max-w-5xl px-5 py-8">
           <p className="rounded-md border border-[#f0c8cf] bg-[#fff5f6] p-4 text-sm text-[#9f5d68]">
             {errorMessage || 'Não foi possível carregar os serviços disponíveis.'}

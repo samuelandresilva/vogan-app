@@ -16,7 +16,7 @@ export function DadosEmpresaCard({ dadosEmpresa }: DadosEmpresaCardProps) {
       className="relative overflow-hidden rounded-2xl border border-[#f3d4dc] bg-white shadow-2xl shadow-[#3f3437]/10"
       aria-label="Informações do salão"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,63,94,0.12),transparent_35%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(183,139,183,0.12),transparent_35%)]" />
 
       <div className="relative p-5 sm:p-6">
         <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.28em] text-[#c97891]">

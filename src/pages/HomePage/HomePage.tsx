@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { AppLayout, HeaderOakbeard } from '../../components/layout'
+import { AppLayout, AppHeader } from '../../components/layout'
 import { getDadosEmpresa } from '../../services/googleSheetsService'
 import type { DadosEmpresa } from '../../types'
 
@@ -45,7 +45,7 @@ export function HomePage() {
   if (isLoading) {
     return (
       <div className="min-h-dvh bg-transparent text-[#3f3437]">
-        <HeaderOakbeard />
+        <AppHeader />
         <main className="mx-auto w-full max-w-5xl px-5 py-8">
           <p className="rounded-md border border-[#f3d4dc] bg-white p-4 text-sm text-[#7b666d]">
             Carregando informações...
@@ -58,7 +58,7 @@ export function HomePage() {
   if (errorMessage || !empresa) {
     return (
       <div className="min-h-dvh bg-transparent text-[#3f3437]">
-        <HeaderOakbeard />
+        <AppHeader />
         <main className="mx-auto w-full max-w-5xl px-5 py-8">
           <div className="rounded-md border border-[#f0c8cf] bg-[#fff5f6] p-4">
             <p className="text-sm text-[#9f5d68]">
@@ -86,11 +86,10 @@ export function HomePage() {
             Agendamento
           </p>
           <h1 className="mt-2 max-w-3xl text-3xl font-bold text-[#3f3437] sm:text-4xl">
-            Escolha seu horário com praticidade.
+            Agende seu momento com praticidade.
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-7 text-[#7b666d]">
-            Consulte serviços, profissionais e horários disponíveis antes de enviar
-            sua solicitação para o estabelecimento.
+            Veja os serviços, escolha um profissional e encontre o melhor horário para seu atendimento.
           </p>
         </div>
 
