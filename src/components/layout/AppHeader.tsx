@@ -2,21 +2,21 @@ export function AppHeader() {
   return (
     <header className="border-b border-[#f3d4dc] bg-[#faf9f9ff]/95 shadow-lg shadow-[#3f3437]/10">
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-5 py-5 sm:py-6">
-        <a href="/" className="flex min-w-0 items-center gap-4">
+        <a href="/" className="flex min-w-0 items-center gap-3">
           <img
             src="/logo.png"
             alt="vogan.app"
-            className="size-16 shrink-0"
+            className="size-12 shrink-0"
           />
 
           <div className="min-w-0">
             <p className="font-bold text-[#3f3437]">
-              <span className="text-4xl font-light text-[#0F172A]">vogan</span>
-              <span className="text-4xl text-[#B78BB7]">.</span>
-              <span className="font-light text-[#0F172A]">app</span>
+              <span className="text-xl font-light text-[#0F172A]">vogan</span>
+              <span className="text-xl text-[#B78BB7]">.</span>
+              <span className="text-xs font-light text-[#0F172A]">app</span>
             </p>
 
-            <p className="mt-1 text-sm leading-5 text-[#B78BB7]">
+            <p className="mt-1 text-xs leading-5 text-[#B78BB7]">
               Agende com estilo.
             </p>
           </div>
